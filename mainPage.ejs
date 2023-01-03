@@ -480,13 +480,6 @@
                   }
             }
 
-            /* apply a natural box layout model to all elements */
-            /*             *,
-            *:before,
-            *:after {
-                  box-sizing: border-box;
-            } */
-
             @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
             @keyframes checked-anim {
@@ -508,25 +501,6 @@
                         height: 3000px;
                   }
             }
-
-            /*             li,
-            a {
-                  margin: 75px 0 -55px 0;
-                  color: #000000;
-                  font: 14pt "Roboto", sans-serif;
-                  font-weight: 700;
-                  line-height: 1.8;
-                  text-decoration: none;
-                  text-transform: none;
-                  list-style: none;
-                  outline: 0;
-                  display: none;
-            } */
-
-            /*             li {
-                  width: 230px;
-                  text-indent: 56px;
-            } */
 
             a:focus {
                   display: block;
@@ -552,7 +526,7 @@
             }
 
             *::selection {
-                  background-color: #ffa0f9;
+                  background-color: #ac8bff;
             }
 
             #trigger,
@@ -625,11 +599,6 @@
             #menu-toggle:checked+#trigger+#burger+#menu {
                   animation: checked-anim 1s ease both;
             }
-
-            /*             #menu-toggle:checked+#trigger~#menu>li,
-            a {
-                  display: block;
-            } */
 
             [type="checkbox"]:not(:checked),
             [type="checkbox"]:checked {
@@ -754,18 +723,42 @@
 
             .insta {
                   max-width: 30px;
+                  transition: all .2s linear;
+
+            }
+
+            .insta:hover{
+                  transform: scale(2.2);
+                  transition: .7s;
+            }
+            .facebook:hover{
+                  transform: scale(2.5);
+                  transition: .7s;
+            }
+            .linkedin:hover{
+                  transform: scale(2.2);
+                  transition: .7s;
+            }
+            .tweeter:hover{
+                  transform: scale(2.2);
+                  transition: .7s;
             }
 
             .facebook {
-                  max-width: 30px;
+                  max-width: 40px;
+                  margin-top: -5px;
+                  transition: all .2s linear;
             }
 
             .linkedin {
                   max-width: 30px;
+                  transition: all .2s linear;
+
             }
 
             .tweeter {
                   max-width: 30px;
+                  transition: all .2s linear;
             }
 
             #contact {
@@ -807,7 +800,6 @@
 
             .wrapper {
                   height: 100vh;
-                  /*This part is important for centering*/
                   display: grid;
                   place-items: center;
             }
@@ -832,11 +824,6 @@
                         border-color: transparent
                   }
             }
-
-
-
-
-
             .container {
                   width: 100%;
                   height: 100vh;
@@ -894,7 +881,7 @@
 
             .reviewItem:hover {
                   border-color: rgb(255, 255, 255);
-                  transform: scale(1.3);
+                  transform: scale(1.1);
                   background-color: #000000;
                   box-shadow: 0 0px 5px 1px #000000;
             }
@@ -960,28 +947,19 @@
                         font-size: 20px;
                   }
             }
-
+            
             @media screen and (min-width:701) and (max-width: 1200) {
                   .reviewItem {
                         padding-top: 500px;
                         padding-bottom: 500px;
                   }
             }
-
+            .img2{
+                  margin-top: 100px;
+            }
       </style>
 </head>
-
 <body>
-
-      <!--       <input type="checkbox" id="menu-toggle" />
-      <label id="trigger" for="menu-toggle"></label>
-      <label id="burger" for="menu-toggle"></label>
-      <ul id="menu">
-            <li><a href="/main">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
-      </ul> -->
 
       <div class="wrapper">
             <div class="typing-demo mainh1 text-center mb-40 mt-40">
@@ -999,7 +977,7 @@
             <div class="row align-items-center">
                   <div class="col-md-6">
                         <img class="img2 mb-20 img-fluid"
-                              src="https://res.cloudinary.com/dicngzun9/image/upload/v1672675289/YelpCamp/oys2am1yjzkpb6rspiqo.svg"
+                              src="https://res.cloudinary.com/dicngzun9/image/upload/v1672751694/YelpCamp/b48np3qlgx68h3b7ebg5.svg"
                               alt="">
                   </div>
                   <div class="col-md-6 text-center">
@@ -1029,7 +1007,7 @@
                               </div>
                         </div>
                   </div>
-                  <div class="col-lg-6 order-1 order-md-2 mb-20">
+                  <div class="col-lg-6 order-1 order-md-2 mt-14 mb-20">
                         <img class="img-fluid"
                               src="https://res.cloudinary.com/dicngzun9/image/upload/v1672676869/YelpCamp/q41ppwiuop3wg6iiadxr.svg"
                               width="" height="" alt="">
@@ -1037,17 +1015,7 @@
             </div>
       </section>
       
-      <h1 id="text2" class="display-1 text-center mb-20">"<span class="simple"> Simple</span> = <span class="attractive">Good UX </span>"</h1>
-
-      <!-- 
-      website without visitors is like a ship lost in the horizon
-      Being first in the search result organically in Google is the dream of all website owners.
-      Getting a quality website is not an expenses but rather an investment.
-      We don't just build websites, we build websites that SELLS.
-      Great web design without functionality is like a sports car with no engine.
-      Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business.
-      Programming is just like poetry...
--->
+      <h1 id="text2" class="display-1 text-center mb-40">"<span class="simple"> Simplicity</span> === <span class="attractive">Better UX </span>"</h1>
 
       <div class="row row-cols-1 row-cols-md-2 mb-10 g-4">
             <div id="quoteRow" class="col">
@@ -1105,7 +1073,7 @@
       </div>
       <div class="container1">
             <h1 class="display-1 mb-40"><span class="text1">What </span><span class="text2">Our </span><span
-                        class="text4">Clients </span><span class="text3">Says..</span> </h1>
+                        class="text4">Client </span><span class="text3">Says..</span> </h1>
       </div>
 
       <div class="container">
@@ -1116,11 +1084,11 @@
                         <div class="top">
                               <div class="clientImage">
                                     <img src="./client.png" alt="">
-                                    <span>Raju Sheoran</span>
+                                    <span>Thomas Williams</span>
                               </div>
                         </div>
                         <article>
-                              <p class="review text-center">Great Harsh, You did Great Job Building my website, It's Really Soo Attractive. </p>
+                              <p class="review text-center">Great Harsh, You did Great Job Building my website, It really helped Me Getting Customers.</p>
                         </article>
                   </div>
 
@@ -1128,11 +1096,11 @@
                         <div class="top">
                               <div class="clientImage">
                                     <img src="./client.png" alt="">
-                                    <span class="text-center">William Barshey</span>
+                                    <span class="text-center">Rajiv Grover</span>
                               </div>
                         </div>
                         <article>
-                              <p class="review text-center">Wow Harsh!! Great work, I'm Soo Happy seeing my website like this. You Not Only Build a Website, You Build your Client's Trust!</p>
+                              <p class="review text-center">WoW Bro, You Won My Trust.. No Words..  :)</p>
                         </article>
                   </div>
 
@@ -1140,25 +1108,17 @@
                         <div class="top">
                               <div class="clientImage">
                                     <img src="./client.png" alt="">
-                                    <span>Raj Grover</span>
+                                    <span>William Brown</span>
                               </div>
                         </div>
                         <article>
       
-      <p class="review text-center">Being first in the search result organically in Google is the dream of all website owners, You just fulfill my Dream.. Thanks Alot, Harsh Soni</p>
+      <p class="review text-center">Being first in the search result organically in Google is the dream of all website owners, You just fulfilled my Dream..</p>
                         </article>
                   </div>
 
             </div>
       </div>
-
-<!--                   <div class="custom-shape-divider-top-1672492399">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                  preserveAspectRatio="none">
-                  <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
-            </svg>
-      </div> -->
 
       <h2 id="contact" class="text-center mt-40">Skills</h2>
       <ul class="text-center mt-20 mb-20">
@@ -1195,19 +1155,15 @@
             <i class="mr-8"><a href="https://www.instagram.com/harshhhhh.__09"><img class="img-fluid insta"
                               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
                               alt=""></a> </i>
-            <i class="mr-4 mb-10"><a href=""><img class="img-fluid facebook"
-                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+            <i class="mr-4 mb-10"><a href="https://wa.me/8307713313"><img class="img-fluid facebook"
+                              src="https://static.vecteezy.com/system/resources/previews/012/162/809/original/whatsapp-logo-3d-render-free-png.png"
                               alt=""></a></i>
-            <i class="ml-4"><a href=""><img class="img-fluid tweeter"
-                              src="https://www.freeiconspng.com/thumbs/logo-twitter-png/logo-twitter-icon-symbol-0.png"
+            <i class="ml-4"><a href="https://t.me/HARSH_0_0_7"><img class="img-fluid tweeter"
+                              src="https://www.freepnglogos.com/uploads/telegram-png/telegram-social-media-icons-12.png"
                               alt=""></a></i>
-            <i class="ml-8"><a href=""><img class="img-fluid linkedin"
-                              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></img></a></i>
-            <i class="ml-8"><a href=""><img class="img-fluid linkedin"
+            <i class="ml-8"><a href="mailto:itzhrshsoni@gmail.com"><img class="img-fluid linkedin"
                               src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"></img></a></i>
       </div>
-
-
 
       <div class="wrapper">
             <div class="typing-demo mainh1 text-center mb-10 mt-10">
@@ -1223,5 +1179,4 @@
             crossorigin="anonymous"></script>
       <script src="https://cdn.tailwindcss.com"></script>
 </body>
-
 </html>
