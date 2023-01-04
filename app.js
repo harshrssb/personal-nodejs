@@ -10,7 +10,7 @@ mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 app.get('/', (req, res) => {
-    res.render('../index.ejs')
+    res.render('../mainPage.ejs')
 })
 
 
